@@ -10,9 +10,11 @@
 		5803E05D1CFFD2FD002898AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803E05C1CFFD2FD002898AA /* main.m */; };
 		5803E0601CFFD2FD002898AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803E05F1CFFD2FD002898AA /* AppDelegate.m */; };
 		5803E0631CFFD2FD002898AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803E0621CFFD2FD002898AA /* ViewController.m */; };
-		5803E0661CFFD2FD002898AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5803E0641CFFD2FD002898AA /* Main.storyboard */; };
 		5803E0681CFFD2FD002898AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5803E0671CFFD2FD002898AA /* Assets.xcassets */; };
 		5803E06B1CFFD2FD002898AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5803E0691CFFD2FD002898AA /* LaunchScreen.storyboard */; };
+		5803E0741CFFD44D002898AA /* MyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803E0731CFFD44D002898AA /* MyItem.m */; };
+		5803E0771CFFDF9D002898AA /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803E0761CFFDF9D002898AA /* TableViewCell.m */; };
+		5803E07A1CFFE3A2002898AA /* MenuData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803E0791CFFE3A2002898AA /* MenuData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +24,15 @@
 		5803E05F1CFFD2FD002898AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5803E0611CFFD2FD002898AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5803E0621CFFD2FD002898AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5803E0651CFFD2FD002898AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5803E0671CFFD2FD002898AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5803E06A1CFFD2FD002898AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5803E06C1CFFD2FD002898AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5803E0721CFFD44D002898AA /* MyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyItem.h; sourceTree = "<group>"; };
+		5803E0731CFFD44D002898AA /* MyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyItem.m; sourceTree = "<group>"; };
+		5803E0751CFFDF9D002898AA /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		5803E0761CFFDF9D002898AA /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		5803E0781CFFE3A2002898AA /* MenuData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuData.h; sourceTree = "<group>"; };
+		5803E0791CFFE3A2002898AA /* MenuData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +69,12 @@
 				5803E05F1CFFD2FD002898AA /* AppDelegate.m */,
 				5803E0611CFFD2FD002898AA /* ViewController.h */,
 				5803E0621CFFD2FD002898AA /* ViewController.m */,
-				5803E0641CFFD2FD002898AA /* Main.storyboard */,
+				5803E0721CFFD44D002898AA /* MyItem.h */,
+				5803E0731CFFD44D002898AA /* MyItem.m */,
+				5803E0781CFFE3A2002898AA /* MenuData.h */,
+				5803E0791CFFE3A2002898AA /* MenuData.m */,
+				5803E0751CFFDF9D002898AA /* TableViewCell.h */,
+				5803E0761CFFDF9D002898AA /* TableViewCell.m */,
 				5803E0671CFFD2FD002898AA /* Assets.xcassets */,
 				5803E0691CFFD2FD002898AA /* LaunchScreen.storyboard */,
 				5803E06C1CFFD2FD002898AA /* Info.plist */,
@@ -138,7 +150,6 @@
 			files = (
 				5803E06B1CFFD2FD002898AA /* LaunchScreen.storyboard in Resources */,
 				5803E0681CFFD2FD002898AA /* Assets.xcassets in Resources */,
-				5803E0661CFFD2FD002898AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5803E0741CFFD44D002898AA /* MyItem.m in Sources */,
 				5803E0631CFFD2FD002898AA /* ViewController.m in Sources */,
+				5803E07A1CFFE3A2002898AA /* MenuData.m in Sources */,
 				5803E0601CFFD2FD002898AA /* AppDelegate.m in Sources */,
+				5803E0771CFFDF9D002898AA /* TableViewCell.m in Sources */,
 				5803E05D1CFFD2FD002898AA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,14 +172,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5803E0641CFFD2FD002898AA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5803E0651CFFD2FD002898AA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5803E0691CFFD2FD002898AA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -214,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -253,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
